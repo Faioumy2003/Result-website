@@ -73,3 +73,37 @@ document.getElementById('searchButton').addEventListener('click', () => {
 
   displayResults(filteredResults);
 });
+results.forEach(item => {
+    if (!item.B) return;
+
+    // تحقق من الدرجة وإذا كانت 60 فأكثر يتم إضافة ختم التميز
+    let honorHTML = "";
+    if (Number(item.I) >= 60) {
+      honorHTML = `
+        <div class="honor-stamp">
+          <p style="font-size: 24px; font-weight: bold; color: #0056b3;">مكرم</p>
+          <p style="font-size: 20px; color: #d9534f;">تهانينا ابننا الغالي 🌹</p>
+        </div>
+      `;
+    }
+
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    card.innerHTML = `
+      <div class="card-header">
+         <h3 class="card-name">${item.C}</h3>
+         <p class="card-exam">المستوى: ${item.D}</p>
+      </div>
+      <div class="card-body">
+         <p><strong>الرقم القومي:</strong> ${item.B}</p>
+         <p><strong>اسم المحفظ:</strong> ${item.E}</p>
+         <p><strong>آخر مستوى تم التكريم فيه:</strong> ${item.F}</p>
+         <p><strong>السنّ:</strong> ${item.G}</p>
+         <p><strong>رقم الهاتف:</strong> ${item.H}</p>
+         <p><strong>الدرجة:</strong> <span class="card-score">${item.I}</span></p>
+         ${honorHTML}
+      </div>
+    `;
+    container.appendChild(card);
+});
