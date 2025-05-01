@@ -163,31 +163,17 @@ footer {
     mix-blend-mode: multiply; /* يزيل الخلفية البيضاء */
 }
 
-/* جعل الصفحة تمتد بطول الشاشة بالكامل */
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100vh; /* يجعل الصفحة بنفس ارتفاع الشاشة */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* تحسين موقع اللوجو وجعله متناسب مع الجوال */
 .logo {
-  width: 80px; /* تصغير الحجم قليلاً ليتناسب مع الجوال */
+  width: 80px; /* تقليل الحجم لجعل الصورة متناسقة */
   height: auto;
   position: absolute;
   top: 10px;
   right: 10px;
-  max-width: 20%; /* يجعل الحجم مرن حسب الشاشة */
+  z-index: 10; /* تأكد أن اللوجو لا يغطي العناصر الأخرى */
 }
 
-/* تحسين عرض العناصر في الجوال */
-.container {
-  width: 90%; /* يجعل المحتوى يتناسب مع عرض الجوال */
-  max-width: 600px; /* يحدد الحد الأقصى للعرض */
-  text-align: center;
+/* التأكد من أن البطاقات تظهر فوق اللوجو */
+.card {
+  position: relative;
+  z-index: 100; /* جعل البطاقات فوق اللوجو */
 }
