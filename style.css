@@ -82,15 +82,16 @@ button:hover {
   margin-bottom: 16px;
 }
 .card-header .card-name {
-  font-size: 36px;  /* زيادة حجم الخط لاسم الطالب */
+  font-size: 45px;  /* زيادة حجم الخط لاسم الطالب */
   font-weight: bold;
-  color: #0056b3;
+  color: #e00303;
   margin: 0;
 }
 .card-header .card-exam {
-  font-size: 30px;  /* حجم المستوى */
-  color: #333;
+  font-size: 36px;  /* حجم المستوى */
+  color: #000000;
   margin-top: 8px;
+  font-weight: bold;
 }
 
 /* محتوى البطاقة مع خطوط فاصلة بين الصفوف */
@@ -99,11 +100,11 @@ button:hover {
   padding: 16px;
 }
 .card-body p {
-  font-size: 28px; /* جميع الخطوط بالحجم 28px أو أكثر */
+  font-size: 34px; /* جميع الخطوط بالحجم 28px أو أكثر */
   color: #000000;
   padding: 10px 0;
   margin: 0;
-  border-bottom: 1px dashed #e0e0e0;
+  border-bottom: 1px dashed #571b03;
 }
 .card-body p:last-child {
   border-bottom: none;
@@ -149,4 +150,15 @@ footer {
   font-size: 18px;
   border-radius: 6px;
   font-weight: bold;
+}
+/* تحسين موقع اللوجو */
+.logo {
+  width: 200px; /* ضبط الحجم */
+  height: auto;
+  position: absolute; /* تحديد الموقع بشكل مطلق */
+  top: 20px; /* يحدد المسافة من الأعلى */
+  right: 20px; /* يحدد المسافة من اليمين */
+}
+.logo {
+  mix-blend-mode: multiply; /* يزيل الخلفية البيضاء */
 }
