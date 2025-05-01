@@ -20,7 +20,7 @@ body {
 
 /* عناوين الصفحة */
 header h1 {
-  font-size: 34px;
+  font-size: 30px;
   color: #cf0000;
   font-weight: bold;
   margin-bottom: 10px;
@@ -143,22 +143,22 @@ button:hover {
 
 /* تنسيق التذييل */
 footer {
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 12px;
   background: #0056b3;
   color: white;
-  font-size: 18px;
+  font-size: 14x;
   border-radius: 6px;
   font-weight: bold;
 }
-/* تحسين موقع اللوجو */
 .logo {
-  width: 200px; /* ضبط الحجم */
+  width: 100px;
   height: auto;
-  position: absolute; /* تحديد الموقع بشكل مطلق */
-  top: 20px; /* يحدد المسافة من الأعلى */
-  right: 20px; /* يحدد المسافة من اليمين */
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1000; /* يجعل اللوجو فوق أي عنصر آخر */
 }
 .logo {
-  mix-blend-mode: multiply; /* يزيل الخلفية البيضاء */
+    mix-blend-mode: multiply; /* يزيل الخلفية البيضاء */
 }
