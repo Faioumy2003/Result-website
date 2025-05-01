@@ -1,0 +1,152 @@
+/* إعداد الخلفية والخط الأساسي */
+body {
+  font-family: "Traditional Arabic", sans-serif;
+  background: linear-gradient(to right, #f0f8ff, #cce7ff);
+  color: black;
+  text-align: center;
+  padding: 20px;
+  direction: rtl;
+}
+
+/* حاوية المحتوى الرئيسية */
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* عناوين الصفحة */
+header h1 {
+  font-size: 34px;
+  color: #0056b3;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #003366;
+}
+
+/* تنسيق قسم البحث */
+.search-section {
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  padding: 12px;
+  font-size: 24px;
+  width: 80%;
+  border: 2px solid #0056b3;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+button {
+  padding: 12px 25px;
+  font-size: 24px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #003366;
+}
+
+/* تنسيق البطاقات (الكروت) - تحسين مظهرها باحترافية */
+.card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* رأس البطاقة بخلفية بيبي بلو مع تباين جيد */
+.card-header {
+  background-color: #BFEFFF;
+  padding: 16px;
+  text-align: center;
+  border-bottom: 2px solid #f0f0f0;
+  margin-bottom: 16px;
+}
+.card-header .card-name {
+  font-size: 36px;  /* زيادة حجم الخط لاسم الطالب */
+  font-weight: bold;
+  color: #0056b3;
+  margin: 0;
+}
+.card-header .card-exam {
+  font-size: 30px;  /* حجم المستوى */
+  color: #333;
+  margin-top: 8px;
+}
+
+/* محتوى البطاقة مع خطوط فاصلة بين الصفوف */
+.card-body {
+  background-color: #fff;
+  padding: 16px;
+}
+.card-body p {
+  font-size: 28px; /* جميع الخطوط بالحجم 28px أو أكثر */
+  color: #000000;
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 1px dashed #e0e0e0;
+}
+.card-body p:last-child {
+  border-bottom: none;
+}
+
+/* تمييز خانة الدرجة */
+.card-score {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #ffcccc, #ff9999);
+  border-radius: 12px;
+  font-size: 32px;  /* حجم الخط أكبر للدرجة */
+  font-weight: bold;
+  color: #a80000;
+}
+
+/* تنسيق ختم التميز (للدرجات 60 فأعلى) */
+.honor-stamp {
+  margin-top: 20px;
+  padding: 12px;
+  border: 2px dashed #ffc0cb;
+  border-radius: 8px;
+  background-color: #fff0f5;
+  font-size: 32px;
+  font-weight: bold;
+  color: #d9534f;
+  line-height: 1.2;
+}
+
+/* رسالة عدم وجود نتائج */
+.no-results {
+  color: red;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* تنسيق التذييل */
+footer {
+  margin-top: 20px;
+  padding: 12px;
+  background: #0056b3;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  font-weight: bold;
+}
